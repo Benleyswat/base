@@ -18,4 +18,12 @@ public class Tachograph implements TrainSensor {
         //TODO
     } 
 
+    public void insert(){
+        //TODO
+    } 
+
+    public void get(){
+        //TODO
+    } 
+
 }
