@@ -2,6 +2,13 @@
 
 This is a sample application for the verification laboratory.
 
+_2022.02.28_ -__We changed the file.__
+
+| authors: |
+|----------|
+|Fruzsi    |
+|Bence     |
+ 
 ## Getting started
 
 * The application is implemented in Java.
