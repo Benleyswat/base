@@ -1,6 +1,7 @@
 package hu.bme.mit.train.controller;
 
 import hu.bme.mit.train.interfaces.TrainController;
+import java.lang.Thread;
 
 public class TrainControllerImpl implements TrainController {
 
@@ -10,15 +11,18 @@ public class TrainControllerImpl implements TrainController {
 	private Thread thread;
 
 	public TrainControllerImpl() {
+		thread = new Thread();
 		thread.run();
-		try{
-			followSpeed();
-			thread.Sleep(2000);
+		public void run(){
+			thread.run();
+			try{
+				followSpeed();
+				thread.sleep(2000); 
+			} 
+			catch(InterruptedException e){
+				e.printStackTrace(); 
+			} 
 		}
-		catch(InterruptedException e){
-			e.printStackTrace();
-		}
-
 	}
 
 	@Override
