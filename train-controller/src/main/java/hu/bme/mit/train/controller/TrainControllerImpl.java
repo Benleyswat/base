@@ -10,12 +10,11 @@ public class TrainControllerImpl implements TrainController {
 	private int speedLimit = 0;
 	private Thread thread;
 
-	public TrainControllerImpl() throws InterruptedException{
+	public TrainControllerImpl(){
 		thread.run();
-
 		try{ 
 			followSpeed();
-			thread.sleep(1000);
+			thread.sleep(2500);
 		}
 		catch(InterruptedException e){
 			e.printStackTrace();
